@@ -13,10 +13,10 @@ def main():
         if option == "1":
             rates.display_rates()
         elif option == "2":
-            currencies = rates.retrieve_currencies()
-            display_currencies(currencies)
+
+            display_currencies(rates.retrieve_currencies())
             try:
-                rates.convert_rates(*get_conversion_input(currencies))
+                rates.convert_rates(*get_conversion_input(rates.validate_currency))
             except Exception as e:
                 print(str(e))
         else:

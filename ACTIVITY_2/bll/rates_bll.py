@@ -16,3 +16,10 @@ class RatesBll:
     def retrieve_currencies(self):
         return self.__rates__dao.retrieve_currencies()
     
+    def validate_currency(self, currency):
+        return currency in self.__rates__dao.retrieve_currencies()
+
+    
+
+
+    

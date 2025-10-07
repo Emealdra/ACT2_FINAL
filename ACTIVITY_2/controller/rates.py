@@ -16,3 +16,6 @@ class Rates():
 
     def retrieve_currencies(self):
         return self.rates_bll.retrieve_currencies()
+    
+    def validate_currency(self, currency):
+        return self.rates_bll.validate_currency(currency)
