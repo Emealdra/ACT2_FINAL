@@ -1,6 +1,3 @@
-
-from controller.rates import Rates
-
 def display_logo():
     print("\n================================")
     print("FX APP  (FOREIGN EXCHANGE APP)")
